@@ -1,0 +1,34 @@
+{
+  "name": "genpark-agentic-web-scraping-anti-bot-bypasser-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic web crawler with headless browser orchestration & dynamic content extraction.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "web-scraping",
+    "agentic-crawler",
+    "anti-bot",
+    "dynamic-extraction"
+  ],
+  "inputs": {
+    "target_url": {
+      "type": "string"
+    },
+    "use_proxy": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "extracted_html_markdown": {
+      "type": "string"
+    },
+    "http_status": {
+      "type": "integer"
+    },
+    "protection_bypassed": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
